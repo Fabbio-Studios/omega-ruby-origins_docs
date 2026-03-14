@@ -1,0 +1,62 @@
+[
+  {
+    "trainer": "Roxanne (Líder de Ginásio)",
+    "location": "Gym de Rustboro",
+    "team": [
+      {
+        "name": "Geodude",
+        "level": 14,
+        "item": "-",
+        "ability": "Sturdy",
+        "moves": ["Rock Tomb", "Tackle", "Defense Curl", "Stealth Rock"]
+      },
+      {
+        "name": "Nosepass",
+        "level": 15,
+        "item": "Oran Berry",
+        "ability": "Sturdy",
+        "moves": ["Rock Tomb", "Harden", "Block", "Thunder Wave"]
+      }
+    ]
+  },
+  {
+    "trainer": "Brendan/May (Rival)",
+    "location": "Route 110",
+    "team": [
+      {
+        "name": "Wingull",
+        "level": 18,
+        "item": "-",
+        "ability": "Keen Eye",
+        "moves": ["Water Pulse", "Supersonic", "Wing Attack", "Quick Attack"]
+      },
+      {
+        "name": "Starter Evoluído",
+        "level": 20,
+        "item": "Sitrus Berry",
+        "ability": "Ability padrão",
+        "moves": ["Golpe STAB", "Golpe de cobertura", "Growl", "Quick Attack"]
+      }
+    ]
+  },
+  {
+    "trainer": "Brawly (Líder de Ginásio)",
+    "location": "Gym de Dewford",
+    "team": [
+      {
+        "name": "Machop",
+        "level": 17,
+        "item": "-",
+        "ability": "Guts",
+        "moves": ["Karate Chop", "Seismic Toss", "Bulk Up", "Focus Energy"]
+      },
+      {
+        "name": "Makuhita",
+        "level": 19,
+        "item": "Oran Berry",
+        "ability": "Thick Fat",
+        "moves": ["Arm Thrust", "Sand Attack", "Bulk Up", "Knock Off"]
+      }
+    ]
+  }
+]
