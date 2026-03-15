@@ -4,27 +4,63 @@
     "location": "Gym de Rustboro",
     "team": [
       {
-        "name": "Geodude",
-        "level": 14,
-        "item": "-",
+        "name": "Carbink",
+        "level": 15,
+        "item": "Apicot Berry",
         "ability": "Sturdy",
         "moves": [
-          {"name": "Rock Tomb", "type": "Rock", "desc": "Deals damage and lowers Speed by 1 stage."},
-          {"name": "Tackle", "type": "Normal", "desc": "Deals damage."},
-          {"name": "Defense Curl", "type": "Normal", "desc": "Raises Defense by 1 stage."},
-          {"name": "Stealth Rock", "type": "Rock", "desc": "Sets up entry hazard that damages switching Pokémon."}
+          {"name": "Magic Coat", "type": "Psychic", "desc": "Reflects status moves back to the opponent."},
+          {"name": "Passing", "type": "Normal", "desc": "Allows the user to switch out while keeping stat changes and certain effects."},
+          {"name": "Explosion", "type": "Normal", "desc": "Deals damage but faints the user."},
+          {"name": "Light Screen", "type": "Psychic", "desc": "Halves special damage for 5 turns."}
         ]
       },
       {
-        "name": "Nosepass",
-        "level": 15,
-        "item": "Oran Berry",
+        "name": "Relicanth",
+        "level": 16,
+        "item": "Choice Band",
+        "ability": "Swift Swim",
+        "moves": [
+          {"name": "Bulldoze", "type": "Ground", "desc": "Deals damage and lowers Speed."},
+          {"name": "Aqua Jet", "type": "Water", "desc": "Always moves first."},
+          {"name": "Rock Tomb", "type": "Rock", "desc": "Deals damage and lowers Speed by 1 stage."},
+          {"name": "Double-Edge", "type": "Normal", "desc": "Deals damage with recoil."}
+        ]
+      },
+      {
+        "name": "Amaura",
+        "level": 16,
+        "item": "Ganlon Berry",
+        "ability": "Refrigerate",
+        "moves": [
+          {"name": "Thunder Wave", "type": "Electric", "desc": "Paralyzes the opponent."},
+          {"name": "Mud Shot", "type": "Ground", "desc": "Deals damage and lowers Speed."},
+          {"name": "Ancient Power", "type": "Rock", "desc": "Deals damage and may raise all stats."},
+          {"name": "Icy Wind", "type": "Ice", "desc": "Deals damage and lowers Speed."}
+        ]
+      },
+      {
+        "name": "Shieldon",
+        "level": 16,
+        "item": "Berry Juice",
         "ability": "Sturdy",
         "moves": [
-          {"name": "Rock Tomb", "type": "Rock", "desc": "Deals damage and lowers Speed by 1 stage."},
-          {"name": "Harden", "type": "Normal", "desc": "Raises Defense by 1 stage."},
-          {"name": "Block", "type": "Normal", "desc": "Prevents switching."},
-          {"name": "Thunder Wave", "type": "Electric", "desc": "Paralyzes the opponent."}
+          {"name": "Metal Sound", "type": "Steel", "desc": "Lowers Special Defense by 2 stages."},
+          {"name": "Rock Blast", "type": "Rock", "desc": "Hits 2-5 times."},
+          {"name": "Protect", "type": "Normal", "desc": "Protects against moves this turn."},
+          {"name": "Toxic", "type": "Poison", "desc": "Badly poisons the opponent."}
+        ]
+      },
+      {
+        "name": "Lycanroc Dusk",
+        "level": 16,
+        "item": "Sitrus Berry",
+        "ability": "Keen Eye",
+        "moves": [
+          {"name": "Fire Fang", "type": "Fire", "desc": "Deals damage and may burn or flinch."},
+          {"name": "Quick Attack", "type": "Normal", "desc": "Always moves first."},
+          {"name": "Swords Dance", "type": "Normal", "desc": "Sharply raises Attack."},
+          {"name": "Rock Tomb", "type": "Rock", "desc": "Deals damage and lowers Speed by 1 stage."}
         ]
       }
     ]
@@ -34,27 +70,75 @@
     "location": "Gym de Dewford",
     "team": [
       {
-        "name": "Machop",
-        "level": 17,
-        "item": "-",
+        "name": "Gurdurr",
+        "level": 24,
+        "item": "Ganlon Berry",
         "ability": "Guts",
         "moves": [
-          {"name": "Karate Chop", "type": "Fighting", "desc": "Deals damage with high critical hit ratio."},
-          {"name": "Seismic Toss", "type": "Fighting", "desc": "Deals damage equal to the user's level."},
+          {"name": "Mach Punch", "type": "Fighting", "desc": "Deals damage and always strikes first."},
+          {"name": "Drain Punch", "type": "Fighting", "desc": "Deals damage and restores HP."},
           {"name": "Bulk Up", "type": "Fighting", "desc": "Raises Attack and Defense by 1 stage."},
-          {"name": "Focus Energy", "type": "Normal", "desc": "Raises critical hit ratio."}
+          {"name": "Knock Off", "type": "Dark", "desc": "Removes the opponent's item."}
         ]
       },
       {
-        "name": "Makuhita",
-        "level": 19,
-        "item": "Oran Berry",
-        "ability": "Thick Fat",
+        "name": "Sawk",
+        "level": 25,
+        "item": "Salac Berry",
+        "ability": "Inner Focus",
         "moves": [
-          {"name": "Arm Thrust", "type": "Fighting", "desc": "Hits 2-5 times."},
-          {"name": "Sand Attack", "type": "Ground", "desc": "Lowers accuracy by 1 stage."},
-          {"name": "Bulk Up", "type": "Fighting", "desc": "Raises Attack and Defense by 1 stage."},
+          {"name": "Endure", "type": "Normal", "desc": "Survives with 1 HP if hit by an attack."},
+          {"name": "Reversal", "type": "Fighting", "desc": "Deals more damage the lower the user's HP."},
+          {"name": "Poison Jab", "type": "Poison", "desc": "Deals damage and may poison the target."},
+          {"name": "Power-Up Punch", "type": "Fighting", "desc": "Deals damage and raises Attack."}
+        ]
+      },
+      {
+        "name": "Mienfoo",
+        "level": 24,
+        "item": "Silk Scarf",
+        "ability": "Inner Focus",
+        "moves": [
+          {"name": "Aerial Ace", "type": "Flying", "desc": "Never misses."},
+          {"name": "Drain Punch", "type": "Fighting", "desc": "Deals damage and restores HP."},
+          {"name": "Fake Out", "type": "Normal", "desc": "Hits first and makes the target flinch."},
           {"name": "Knock Off", "type": "Dark", "desc": "Removes the opponent's item."}
+        ]
+      },
+      {
+        "name": "Lucario",
+        "level": 25,
+        "item": "Magnet",
+        "ability": "Inner Focus",
+        "moves": [
+          {"name": "Thunder Punch", "type": "Electric", "desc": "Deals damage and may paralyze."},
+          {"name": "Aura Sphere", "type": "Fighting", "desc": "Never misses."},
+          {"name": "Flash Cannon", "type": "Steel", "desc": "Deals damage and may lower Special Defense."},
+          {"name": "Nasty Plot", "type": "Dark", "desc": "Sharply raises Special Attack."}
+        ]
+      },
+      {
+        "name": "Breloom",
+        "level": 25,
+        "item": "Leftovers",
+        "ability": "Effect Spore",
+        "moves": [
+          {"name": "Substitute", "type": "Normal", "desc": "Creates a decoy using HP."},
+          {"name": "Spore", "type": "Grass", "desc": "Puts the target to sleep."},
+          {"name": "Bulk Up", "type": "Fighting", "desc": "Raises Attack and Defense by 1 stage."},
+          {"name": "Mach Punch", "type": "Fighting", "desc": "Deals damage and always strikes first."}
+        ]
+      },
+      {
+        "name": "Marshadow",
+        "level": 25,
+        "item": "Scope Lens",
+        "ability": "Technician",
+        "moves": [
+          {"name": "Ice Punch", "type": "Ice", "desc": "Deals damage and may freeze."},
+          {"name": "Shadow Sneak", "type": "Ghost", "desc": "Always moves first."},
+          {"name": "Bulk Up", "type": "Fighting", "desc": "Raises Attack and Defense by 1 stage."},
+          {"name": "Drain Punch", "type": "Fighting", "desc": "Deals damage and restores HP."}
         ]
       }
     ]
@@ -64,51 +148,63 @@
     "location": "Gym de Mauville",
     "team": [
       {
-        "name": "Voltorb",
-        "level": 23,
-        "item": "-",
+        "name": "Heliolisk",
+        "level": 30,
+        "item": "Focus Band",
+        "ability": "Dry Skin",
+        "moves": [
+          {"name": "Hyper Voice", "type": "Normal", "desc": "Deals damage to all adjacent Pokémon."},
+          {"name": "Charge", "type": "Electric", "desc": "Raises Special Defense and boosts next Electric move."},
+          {"name": "Thunderbolt", "type": "Electric", "desc": "Deals damage and may paralyze."},
+          {"name": "Grass Knot", "type": "Grass", "desc": "Deals more damage to heavier opponents."}
+        ]
+      },
+      {
+        "name": "Raichu",
+        "level": 30,
+        "item": "Mystic Water",
         "ability": "Static",
         "moves": [
-          {"name": "Spark", "type": "Electric", "desc": "Deals damage and may paralyze."},
-          {"name": "Swift", "type": "Normal", "desc": "Never misses."},
-          {"name": "Light Screen", "type": "Psychic", "desc": "Halves special damage for 5 turns."},
-          {"name": "Self-Destruct", "type": "Normal", "desc": "User faints after use."}
-        ]
-      },
-      {
-        "name": "Electrike",
-        "level": 22,
-        "item": "Oran Berry",
-        "ability": "Lightning Rod",
-        "moves": [
-          {"name": "Thunder Fang", "type": "Electric", "desc": "Deals damage and may paralyze or flinch."},
-          {"name": "Howl", "type": "Normal", "desc": "Raises Attack by 1 stage."},
-          {"name": "Quick Attack", "type": "Normal", "desc": "Always moves first."},
-          {"name": "Bite", "type": "Dark", "desc": "Deals damage and may flinch."}
-        ]
-      },
-      {
-        "name": "Magnemite",
-        "level": 22,
-        "item": "Berry Juice",
-        "ability": "Sturdy",
-        "moves": [
-          {"name": "Spark", "type": "Electric", "desc": "Deals damage and may paralyze."},
-          {"name": "Thunder Wave", "type": "Electric", "desc": "Paralyzes the opponent."},
-          {"name": "Magnet Bomb", "type": "Steel", "desc": "Never misses."},
-          {"name": "Double Team", "type": "Normal", "desc": "Raises evasion by 1 stage."}
-        ]
-      },
-      {
-        "name": "Magneton",
-        "level": 25,
-        "item": "Bright Powder",
-        "ability": "Magnet Pull",
-        "moves": [
+          {"name": "Surf", "type": "Water", "desc": "Deals damage to all adjacent Pokémon."},
+          {"name": "Psychic", "type": "Psychic", "desc": "Deals damage and may lower Special Defense."},
           {"name": "Thunderbolt", "type": "Electric", "desc": "Deals damage and may paralyze."},
-          {"name": "Flash Cannon", "type": "Steel", "desc": "Deals damage and may lower Special Defense."},
-          {"name": "Thunder Wave", "type": "Electric", "desc": "Paralyzes the opponent."},
-          {"name": "Mirror Shot", "type": "Steel", "desc": "Deals damage and may lower accuracy."}
+          {"name": "Focus Blast", "type": "Fighting", "desc": "Deals damage and may lower Special Defense."}
+        ]
+      },
+      {
+        "name": "Jolteon",
+        "level": 30,
+        "item": "Leftovers",
+        "ability": "Volt Absorb",
+        "moves": [
+          {"name": "Signal Beam", "type": "Bug", "desc": "Deals damage and may confuse."},
+          {"name": "Shadow Ball", "type": "Ghost", "desc": "Deals damage and may lower Special Defense."},
+          {"name": "Thunderbolt", "type": "Electric", "desc": "Deals damage and may paralyze."},
+          {"name": "Calm Mind", "type": "Psychic", "desc": "Raises Special Attack and Special Defense."}
+        ]
+      },
+      {
+        "name": "Rotom F.",
+        "level": 30,
+        "item": "Wiki Berry",
+        "ability": "Levitate",
+        "moves": [
+          {"name": "Air Slash", "type": "Flying", "desc": "Deals damage and may cause flinching."},
+          {"name": "Will-o-Wisp", "type": "Fire", "desc": "Burns the target."},
+          {"name": "Pain Split", "type": "Normal", "desc": "Averages HP between user and target."},
+          {"name": "Thunderbolt", "type": "Electric", "desc": "Deals damage and may paralyze."}
+        ]
+      },
+      {
+        "name": "Pawmot",
+        "level": 30,
+        "item": "Black Belt",
+        "ability": "Iron Fist",
+        "moves": [
+          {"name": "Open Combat", "type": "Fighting", "desc": "Lowers user's defenses after attacking."},
+          {"name": "Thunder Punch", "type": "Electric", "desc": "Deals damage and may paralyze."},
+          {"name": "Mach Punch", "type": "Fighting", "desc": "Deals damage and always strikes first."},
+          {"name": "Seed Bomb", "type": "Grass", "desc": "Deals damage."}
         ]
       }
     ]
@@ -118,51 +214,75 @@
     "location": "Gym de Lavaridge",
     "team": [
       {
-        "name": "Slugma",
-        "level": 26,
-        "item": "Charcoal",
-        "ability": "Flame Body",
-        "moves": [
-          {"name": "Flamethrower", "type": "Fire", "desc": "Deals damage and may burn."},
-          {"name": "Smokescreen", "type": "Normal", "desc": "Lowers accuracy by 1 stage."},
-          {"name": "Rock Throw", "type": "Rock", "desc": "Deals damage."},
-          {"name": "Yawn", "type": "Normal", "desc": "Makes the opponent drowsy."}
-        ]
-      },
-      {
         "name": "Torkoal",
-        "level": 28,
-        "item": "Heat Rock",
+        "level": 36,
+        "item": "Leftovers",
         "ability": "Drought",
         "moves": [
-          {"name": "Lava Plume", "type": "Fire", "desc": "Deals damage and may burn."},
-          {"name": "Rapid Spin", "type": "Normal", "desc": "Deals damage and removes entry hazards."},
-          {"name": "Protect", "type": "Normal", "desc": "Protects against moves this turn."},
+          {"name": "Sunny Day", "type": "Fire", "desc": "Summons sunlight for 5 turns."},
+          {"name": "Solarbeam", "type": "Grass", "desc": "Deals damage; charges turn 1 unless sunny."},
+          {"name": "Yawn", "type": "Normal", "desc": "Makes the opponent drowsy."},
           {"name": "Flamethrower", "type": "Fire", "desc": "Deals damage and may burn."}
         ]
       },
       {
-        "name": "Numel",
-        "level": 28,
-        "item": "Oran Berry",
-        "ability": "Oblivious",
+        "name": "Rotom H.",
+        "level": 36,
+        "item": "Wiki Berry",
+        "ability": "Levitate",
         "moves": [
-          {"name": "Ember", "type": "Fire", "desc": "Deals damage and may burn."},
-          {"name": "Magnitude", "type": "Ground", "desc": "Deals damage with random power."},
-          {"name": "Yawn", "type": "Normal", "desc": "Makes the opponent drowsy."},
-          {"name": "Bulldoze", "type": "Ground", "desc": "Deals damage and lowers Speed."}
+          {"name": "Will-o-Wisp", "type": "Fire", "desc": "Burns the target."},
+          {"name": "Discharge", "type": "Electric", "desc": "Deals damage and may paralyze."},
+          {"name": "Overheat", "type": "Fire", "desc": "Deals damage and sharply lowers Special Attack."},
+          {"name": "Pain Split", "type": "Normal", "desc": "Averages HP between user and target."}
         ]
       },
       {
-        "name": "Camerupt",
-        "level": 30,
-        "item": "Soft Sand",
-        "ability": "Solid Rock",
+        "name": "Scovillain",
+        "level": 36,
+        "item": "Quick Claw",
+        "ability": "Flash Fire",
         "moves": [
-          {"name": "Earthquake", "type": "Ground", "desc": "Deals damage."},
+          {"name": "Solarbeam", "type": "Grass", "desc": "Deals damage; charges turn 1 unless sunny."},
           {"name": "Flamethrower", "type": "Fire", "desc": "Deals damage and may burn."},
-          {"name": "Rock Slide", "type": "Rock", "desc": "Deals damage and may flinch."},
-          {"name": "Protect", "type": "Normal", "desc": "Protects against moves this turn."}
+          {"name": "Growth", "type": "Normal", "desc": "Raises Attack and Special Attack."},
+          {"name": "Giga Drain", "type": "Grass", "desc": "Deals damage and restores HP."}
+        ]
+      },
+      {
+        "name": "Typhlosion",
+        "level": 36,
+        "item": "Choice Scarf",
+        "ability": "Blaze",
+        "moves": [
+          {"name": "Shadow Ball", "type": "Ghost", "desc": "Deals damage and may lower Special Defense."},
+          {"name": "Eruption", "type": "Fire", "desc": "Deals damage; power depends on HP."},
+          {"name": "Flamethrower", "type": "Fire", "desc": "Deals damage and may burn."},
+          {"name": "Focus Blast", "type": "Fighting", "desc": "Deals damage and may lower Special Defense."}
+        ]
+      },
+      {
+        "name": "Blaziken",
+        "level": 36,
+        "item": "Black Belt",
+        "ability": "Blaze",
+        "moves": [
+          {"name": "Open Combat", "type": "Fighting", "desc": "Lowers user's defenses after attacking."},
+          {"name": "Flare Blitz", "type": "Fire", "desc": "Deals damage and hurts the user."},
+          {"name": "Protect", "type": "Normal", "desc": "Protects against moves this turn."},
+          {"name": "Swords Dance", "type": "Normal", "desc": "Sharply raises Attack."}
+        ]
+      },
+      {
+        "name": "Arcanine",
+        "level": 36,
+        "item": "White Herb",
+        "ability": "Intimidate",
+        "moves": [
+          {"name": "Flare Blitz", "type": "Fire", "desc": "Deals damage and hurts the user."},
+          {"name": "Overheat", "type": "Fire", "desc": "Deals damage and sharply lowers Special Attack."},
+          {"name": "Extreme Speed", "type": "Normal", "desc": "Usually moves first."},
+          {"name": "Rock Slide", "type": "Rock", "desc": "Deals damage and may flinch."}
         ]
       }
     ]
@@ -172,51 +292,75 @@
     "location": "Gym de Petalburg",
     "team": [
       {
-        "name": "Slaking",
-        "level": 36,
-        "item": "Leftovers",
-        "ability": "Truant",
+        "name": "Ambipom",
+        "level": 42,
+        "item": "Sharp Beak",
+        "ability": "Technician",
         "moves": [
-          {"name": "Body Slam", "type": "Normal", "desc": "Deals damage and may paralyze."},
-          {"name": "Earthquake", "type": "Ground", "desc": "Deals damage."},
-          {"name": "Yawn", "type": "Normal", "desc": "Makes the opponent drowsy."},
-          {"name": "Facade", "type": "Normal", "desc": "Power doubles if statused."}
+          {"name": "Fake Out", "type": "Normal", "desc": "Hits first and makes the target flinch."},
+          {"name": "Aerial Ace", "type": "Flying", "desc": "Never misses."},
+          {"name": "Power-Up Punch", "type": "Fighting", "desc": "Deals damage and raises Attack."},
+          {"name": "Quick Attack", "type": "Normal", "desc": "Always moves first."}
         ]
       },
       {
-        "name": "Vigoroth",
-        "level": 34,
-        "item": "Sitrus Berry",
-        "ability": "Vital Spirit",
+        "name": "Porygon-Z",
+        "level": 42,
+        "item": "Choice Specs",
+        "ability": "Download",
         "moves": [
-          {"name": "Crunch", "type": "Dark", "desc": "Deals damage and may lower Defense."},
-          {"name": "Slash", "type": "Normal", "desc": "Deals damage with high critical hit ratio."},
-          {"name": "Bulk Up", "type": "Fighting", "desc": "Raises Attack and Defense by 1 stage."},
-          {"name": "Uproar", "type": "Normal", "desc": "Prevents sleep for 3 turns."}
+          {"name": "Thunderbolt", "type": "Electric", "desc": "Deals damage and may paralyze."},
+          {"name": "Psychic", "type": "Psychic", "desc": "Deals damage and may lower Special Defense."},
+          {"name": "Tri Attack", "type": "Normal", "desc": "Deals damage and may inflict status."},
+          {"name": "Shadow Ball", "type": "Ghost", "desc": "Deals damage and may lower Special Defense."}
         ]
       },
       {
-        "name": "Meditite",
-        "level": 32,
-        "item": "Choice Band",
-        "ability": "Pure Power",
+        "name": "Chansey",
+        "level": 42,
+        "item": "Lucky Punch",
+        "ability": "Natural Cure",
         "moves": [
-          {"name": "High Jump Kick", "type": "Fighting", "desc": "Deals damage but crashes if it misses."},
-          {"name": "Thunder Punch", "type": "Electric", "desc": "Deals damage and may paralyze."},
-          {"name": "Ice Punch", "type": "Ice", "desc": "Deals damage and may freeze."},
-          {"name": "Detect", "type": "Fighting", "desc": "Protects against moves this turn."}
+          {"name": "Seismic Toss", "type": "Fighting", "desc": "Deals damage equal to the user's level."},
+          {"name": "Minimize", "type": "Normal", "desc": "Raises evasion by 1 stage."},
+          {"name": "Soft-Boiled", "type": "Normal", "desc": "Restores HP."},
+          {"name": "Thunder Wave", "type": "Electric", "desc": "Paralyzes the opponent."}
         ]
       },
       {
-        "name": "Linoone",
-        "level": 30,
-        "item": "Leftovers",
-        "ability": "Pickup",
+        "name": "Stoutland",
+        "level": 42,
+        "item": "Silk Scarf",
+        "ability": "Intimidate",
         "moves": [
-          {"name": "Shadow Claw", "type": "Ghost", "desc": "Deals damage with high critical hit ratio."},
+          {"name": "Fake Out", "type": "Normal", "desc": "Hits first and makes the target flinch."},
+          {"name": "Facade", "type": "Normal", "desc": "Power doubles if statused."},
+          {"name": "Superpower", "type": "Fighting", "desc": "Lowers the user's Attack and Defense."},
+          {"name": "Crunch", "type": "Dark", "desc": "Deals damage and may lower Defense."}
+        ]
+      },
+      {
+        "name": "Obstagoon",
+        "level": 42,
+        "item": "Salac Berry",
+        "ability": "Defiant",
+        "moves": [
           {"name": "Belly Drum", "type": "Normal", "desc": "Maximizes Attack but halves HP."},
-          {"name": "Quick Attack", "type": "Normal", "desc": "Always moves first."},
-          {"name": "Iron Tail", "type": "Steel", "desc": "Deals damage and may lower Defense."}
+          {"name": "Extreme Speed", "type": "Normal", "desc": "Usually moves first."},
+          {"name": "Shadow Claw", "type": "Ghost", "desc": "Deals damage with high critical hit ratio."},
+          {"name": "Night Slash", "type": "Dark", "desc": "Deals damage with high critical hit ratio."}
+        ]
+      },
+      {
+        "name": "Zoroark",
+        "level": 42,
+        "item": "Scope Lens",
+        "ability": "Illusion",
+        "moves": [
+          {"name": "Psychic", "type": "Psychic", "desc": "Deals damage and may lower Special Defense."},
+          {"name": "Shadow Ball", "type": "Ghost", "desc": "Deals damage and may lower Special Defense."},
+          {"name": "Hyper Voice", "type": "Normal", "desc": "Deals damage to all adjacent Pokémon."},
+          {"name": "Focus Blast", "type": "Fighting", "desc": "Deals damage and may lower Special Defense."}
         ]
       }
     ]
@@ -226,51 +370,75 @@
     "location": "Gym de Fortree",
     "team": [
       {
-        "name": "Taillow",
-        "level": 27,
-        "item": "Scope Lens",
-        "ability": "Guts",
+        "name": "Talonflame",
+        "level": 50,
+        "item": "White Herb",
+        "ability": "Gale Wings",
         "moves": [
-          {"name": "Aerial Ace", "type": "Flying", "desc": "Never misses."},
-          {"name": "Quick Attack", "type": "Normal", "desc": "Always moves first."},
-          {"name": "Wing Attack", "type": "Flying", "desc": "Deals damage."},
-          {"name": "Endeavor", "type": "Normal", "desc": "Sets opponent's HP to match user's."}
+          {"name": "Overheat", "type": "Fire", "desc": "Deals damage and sharply lowers Special Attack."},
+          {"name": "Flare Blitz", "type": "Fire", "desc": "Deals damage and hurts the user."},
+          {"name": "Dual Wingbeat", "type": "Flying", "desc": "Hits twice."},
+          {"name": "Swords Dance", "type": "Normal", "desc": "Sharply raises Attack."}
         ]
       },
       {
-        "name": "Pelipper",
-        "level": 29,
-        "item": "Wide Lens",
-        "ability": "Keen Eye",
+        "name": "Kilowatrel",
+        "level": 50,
+        "item": "Sharp Beak",
+        "ability": "Volt Absorb",
         "moves": [
-          {"name": "Water Pulse", "type": "Water", "desc": "Deals damage and may confuse."},
-          {"name": "Wing Attack", "type": "Flying", "desc": "Deals damage."},
-          {"name": "Roost", "type": "Flying", "desc": "Restores HP and removes Flying type temporarily."},
-          {"name": "Protect", "type": "Normal", "desc": "Protects against moves this turn."}
+          {"name": "Endeavor", "type": "Normal", "desc": "Sets opponent's HP to match user's."},
+          {"name": "Feather Dance", "type": "Flying", "desc": "Lowers the target's Attack."},
+          {"name": "Thunderbolt", "type": "Electric", "desc": "Deals damage and may paralyze."},
+          {"name": "Air Slash", "type": "Flying", "desc": "Deals damage and may flinch."}
         ]
       },
       {
-        "name": "Skarmory",
-        "level": 30,
-        "item": "Leftovers",
-        "ability": "Sturdy",
+        "name": "Togekiss",
+        "level": 50,
+        "item": "Black Belt",
+        "ability": "Serene Grace",
         "moves": [
-          {"name": "Steel Wing", "type": "Steel", "desc": "Deals damage and may raise Defense."},
           {"name": "Air Slash", "type": "Flying", "desc": "Deals damage and may flinch."},
-          {"name": "Roost", "type": "Flying", "desc": "Restores HP and removes Flying type temporarily."},
-          {"name": "Spikes", "type": "Ground", "desc": "Sets up entry hazard."}
+          {"name": "Flamethrower", "type": "Fire", "desc": "Deals damage and may burn."},
+          {"name": "Aura Sphere", "type": "Fighting", "desc": "Never misses."},
+          {"name": "Dazzling Gleam", "type": "Fairy", "desc": "Deals damage to all adjacent opponents."}
         ]
       },
       {
-        "name": "Altaria",
-        "level": 32,
+        "name": "Dragonite",
+        "level": 50,
         "item": "Lum Berry",
-        "ability": "Natural Cure",
+        "ability": "Inner Focus",
         "moves": [
-          {"name": "Dragon Breath", "type": "Dragon", "desc": "Deals damage and may paralyze."},
-          {"name": "Moonblast", "type": "Fairy", "desc": "Deals damage and may lower Special Attack."},
-          {"name": "Roost", "type": "Flying", "desc": "Restores HP and removes Flying type temporarily."},
-          {"name": "Sky Attack", "type": "Flying", "desc": "Charges then deals damage with high critical hit ratio."}
+          {"name": "Extreme Speed", "type": "Normal", "desc": "Usually moves first."},
+          {"name": "Fire Punch", "type": "Fire", "desc": "Deals damage and may burn."},
+          {"name": "Outrage", "type": "Dragon", "desc": "Attacks for 2-3 turns then confuses."},
+          {"name": "Dragon Dance", "type": "Dragon", "desc": "Raises Attack and Speed."}
+        ]
+      },
+      {
+        "name": "M Hawlucha",
+        "level": 50,
+        "item": "Leftovers",
+        "ability": "Unburden",
+        "moves": [
+          {"name": "Swords Dance", "type": "Normal", "desc": "Sharply raises Attack."},
+          {"name": "Drain Punch", "type": "Fighting", "desc": "Deals damage and restores HP."},
+          {"name": "Dual Wingbeat", "type": "Flying", "desc": "Hits twice."},
+          {"name": "Encore", "type": "Normal", "desc": "Forces the target to repeat its last move."}
+        ]
+      },
+      {
+        "name": "Landorus",
+        "level": 50,
+        "item": "Leftovers",
+        "ability": "Intimidate",
+        "moves": [
+          {"name": "Earthquake", "type": "Ground", "desc": "Deals damage."},
+          {"name": "Substitute", "type": "Normal", "desc": "Creates a decoy using HP."},
+          {"name": "Bulk Up", "type": "Fighting", "desc": "Raises Attack and Defense."},
+          {"name": "Rock Slide", "type": "Rock", "desc": "Deals damage and may flinch."}
         ]
       }
     ]
@@ -280,117 +448,153 @@
     "location": "Gym de Mossdeep",
     "team": [
       {
-        "name": "Lunatone",
-        "level": 34,
+        "name": "Hatterene",
+        "level": 58,
         "item": "Leftovers",
-        "ability": "Levitate",
+        "ability": "Magic Bounce",
         "moves": [
-          {"name": "Psychic", "type": "Psychic", "desc": "Deals damage and may lower Special Defense."},
-          {"name": "Moonblast", "type": "Fairy", "desc": "Deals damage and may lower Special Attack."},
           {"name": "Calm Mind", "type": "Psychic", "desc": "Raises Special Attack and Special Defense."},
-          {"name": "Ice Beam", "type": "Ice", "desc": "Deals damage and may freeze."}
-        ]
-      },
-      {
-        "name": "Solrock",
-        "level": 34,
-        "item": "Bright Powder",
-        "ability": "Levitate",
-        "moves": [
-          {"name": "Zen Headbutt", "type": "Psychic", "desc": "Deals damage and may flinch."},
-          {"name": "Flamethrower", "type": "Fire", "desc": "Deals damage and may burn."},
           {"name": "Psychic", "type": "Psychic", "desc": "Deals damage and may lower Special Defense."},
-          {"name": "Sunny Day", "type": "Fire", "desc": "Summons harsh sunlight."}
+          {"name": "Draining Kiss", "type": "Fairy", "desc": "Deals damage and restores HP."},
+          {"name": "Mystical Fire", "type": "Fire", "desc": "Deals damage and lowers Special Attack."}
         ]
       },
       {
-        "name": "Ralts",
-        "level": 33,
+        "name": "M Meowstic",
+        "level": 58,
+        "item": "Ganlon Berry",
+        "ability": "Prankster",
+        "moves": [
+          {"name": "Psychic", "type": "Psychic", "desc": "Deals damage and may lower Special Defense."},
+          {"name": "Thunder Wave", "type": "Electric", "desc": "Paralyzes the opponent."},
+          {"name": "Light Screen", "type": "Psychic", "desc": "Halves special damage for 5 turns."},
+          {"name": "Reflect", "type": "Psychic", "desc": "Halves physical damage for 5 turns."}
+        ]
+      },
+      {
+        "name": "Gardevoir",
+        "level": 58,
         "item": "Choice Specs",
-        "ability": "Synchronize",
+        "ability": "Trace",
         "moves": [
           {"name": "Psychic", "type": "Psychic", "desc": "Deals damage and may lower Special Defense."},
+          {"name": "Aura Sphere", "type": "Fighting", "desc": "Never misses."},
           {"name": "Thunderbolt", "type": "Electric", "desc": "Deals damage and may paralyze."},
-          {"name": "Shadow Ball", "type": "Ghost", "desc": "Deals damage and may lower Special Defense."},
-          {"name": "Calm Mind", "type": "Psychic", "desc": "Raises Special Attack and Special Defense."}
+          {"name": "Moonblast", "type": "Fairy", "desc": "Deals damage and may lower Special Attack."}
         ]
       },
       {
-        "name": "Claydol",
-        "level": 36,
-        "item": "Leftovers",
-        "ability": "Levitate",
+        "name": "Gallade",
+        "level": 58,
+        "item": "Scope Lens",
+        "ability": "Inner Focus",
         "moves": [
-          {"name": "Earthquake", "type": "Ground", "desc": "Deals damage."},
-          {"name": "Ice Beam", "type": "Ice", "desc": "Deals damage and may freeze."},
+          {"name": "Open Combat", "type": "Fighting", "desc": "Lowers user's defenses after attacking."},
+          {"name": "Leaf Blade", "type": "Grass", "desc": "Deals damage with high critical hit ratio."},
+          {"name": "Swords Dance", "type": "Normal", "desc": "Sharply raises Attack."},
+          {"name": "Psycho Cut", "type": "Psychic", "desc": "Deals damage with high critical hit ratio."}
+        ]
+      },
+      {
+        "name": "Reuniclus",
+        "level": 58,
+        "item": "Black Belt",
+        "ability": "Magic Guard",
+        "moves": [
+          {"name": "Focus Blast", "type": "Fighting", "desc": "Deals damage and may lower Special Defense."},
+          {"name": "Calm Mind", "type": "Psychic", "desc": "Raises Special Attack and Special Defense."},
+          {"name": "Recover", "type": "Normal", "desc": "Restores half of max HP."},
+          {"name": "Psychic", "type": "Psychic", "desc": "Deals damage and may lower Special Defense."}
+        ]
+      },
+      {
+        "name": "Alakazam",
+        "level": 58,
+        "item": "Black Belt",
+        "ability": "Magic Guard",
+        "moves": [
           {"name": "Psychic", "type": "Psychic", "desc": "Deals damage and may lower Special Defense."},
-          {"name": "Protect", "type": "Normal", "desc": "Protects against moves this turn."}
+          {"name": "Dazzling Gleam", "type": "Fairy", "desc": "Deals damage to all adjacent Pokémon."},
+          {"name": "Counter", "type": "Fighting", "desc": "Returns doubled physical damage taken."},
+          {"name": "Focus Blast", "type": "Fighting", "desc": "Deals damage and may lower Special Defense."}
         ]
       }
     ]
   },
   {
-    "trainer": "Wallace (Campeão)",
-    "location": "Sootopolis City",
+    "trainer": "Wallace (Líder de Ginásio)",
+    "location": "Gym de Sootopolis",
     "team": [
       {
-        "name": "Milotic",
-        "level": 47,
-        "item": "Leftovers",
-        "ability": "Marvel Scale",
-        "moves": [
-          {"name": "Surf", "type": "Water", "desc": "Deals damage."},
-          {"name": "Ice Beam", "type": "Ice", "desc": "Deals damage and may freeze."},
-          {"name": "Recover", "type": "Normal", "desc": "Restores half of max HP."},
-          {"name": "Mirror Coat", "type": "Psychic", "desc": "Counters special moves."}
-        ]
-      },
-      {
         "name": "Ludicolo",
-        "level": 46,
-        "item": "Life Orb",
+        "level": 66,
+        "item": "Nevermeltice",
         "ability": "Rain Dish",
         "moves": [
-          {"name": "Scald", "type": "Water", "desc": "Deals damage and may burn."},
           {"name": "Giga Drain", "type": "Grass", "desc": "Deals damage and heals user."},
           {"name": "Ice Beam", "type": "Ice", "desc": "Deals damage and may freeze."},
-          {"name": "Rain Dance", "type": "Water", "desc": "Summons rain."}
+          {"name": "Fake Out", "type": "Normal", "desc": "Hits first and makes the target flinch."},
+          {"name": "Scald", "type": "Water", "desc": "Deals damage and may burn."}
         ]
       },
       {
-        "name": "Whiscash",
-        "level": 44,
-        "item": "Mystic Water",
-        "ability": "Oblivious",
+        "name": "Clawitzer",
+        "level": 66,
+        "item": "Nevermeltice",
+        "ability": "Mega Launcher",
+        "moves": [
+          {"name": "Dark Pulse", "type": "Dark", "desc": "Deals damage and may flinch."},
+          {"name": "Ice Beam", "type": "Ice", "desc": "Deals damage and may freeze."},
+          {"name": "Scald", "type": "Water", "desc": "Deals damage and may burn."},
+          {"name": "Aura Sphere", "type": "Fighting", "desc": "Never misses."}
+        ]
+      },
+      {
+        "name": "Empoleon",
+        "level": 66,
+        "item": "Leftovers",
+        "ability": "Torrent",
+        "moves": [
+          {"name": "Scald", "type": "Water", "desc": "Deals damage and may burn."},
+          {"name": "Flash Cannon", "type": "Steel", "desc": "Deals damage and may lower Special Defense."},
+          {"name": "Toxic", "type": "Poison", "desc": "Badly poisons the opponent."},
+          {"name": "Protect", "type": "Normal", "desc": "Protects against moves this turn."}
+        ]
+      },
+      {
+        "name": "Dracovish",
+        "level": 66,
+        "item": "Choice Band",
+        "ability": "Strong Jaw",
+        "moves": [
+          {"name": "Outrage", "type": "Dragon", "desc": "Attacks for 2-3 turns then confuses."},
+          {"name": "Liquidation", "type": "Water", "desc": "Deals damage and may lower Defense."},
+          {"name": "Crunch", "type": "Dark", "desc": "Deals damage and may lower Defense."},
+          {"name": "Ice Fang", "type": "Ice", "desc": "Deals damage and may freeze or flinch."}
+        ]
+      },
+      {
+        "name": "Milotic",
+        "level": 66,
+        "item": "Nevermeltice",
+        "ability": "Marvel Scale",
+        "moves": [
+          {"name": "Scald", "type": "Water", "desc": "Deals damage and may burn."},
+          {"name": "Mud Shot", "type": "Ground", "desc": "Deals damage and lowers Speed."},
+          {"name": "Ice Beam", "type": "Ice", "desc": "Deals damage and may freeze."},
+          {"name": "Recover", "type": "Normal", "desc": "Restores half of max HP."}
+        ]
+      },
+      {
+        "name": "M Swampert",
+        "level": 66,
+        "item": "Nevermeltice",
+        "ability": "Swift Swim",
         "moves": [
           {"name": "Earthquake", "type": "Ground", "desc": "Deals damage."},
           {"name": "Waterfall", "type": "Water", "desc": "Deals damage and may flinch."},
-          {"name": "Mud Shot", "type": "Ground", "desc": "Deals damage and lowers Speed."},
-          {"name": "Amnesia", "type": "Psychic", "desc": "Sharply raises Special Defense."}
-        ]
-      },
-      {
-        "name": "Gyarados",
-        "level": 46,
-        "item": "Leftovers",
-        "ability": "Intimidate",
-        "moves": [
-          {"name": "Waterfall", "type": "Water", "desc": "Deals damage and may flinch."},
-          {"name": "Dragon Dance", "type": "Dragon", "desc": "Raises Attack and Speed."},
-          {"name": "Ice Fang", "type": "Ice", "desc": "Deals damage and may freeze or flinch."},
-          {"name": "Earthquake", "type": "Ground", "desc": "Deals damage."}
-        ]
-      },
-      {
-        "name": "Wailord",
-        "level": 48,
-        "item": "Sitrus Berry",
-        "ability": "Water Veil",
-        "moves": [
-          {"name": "Surf", "type": "Water", "desc": "Deals damage."},
-          {"name": "Bounce", "type": "Flying", "desc": "Charges then deals damage."},
-          {"name": "Rest", "type": "Psychic", "desc": "Restores HP but user sleeps."},
-          {"name": "Hydro Pump", "type": "Water", "desc": "Deals damage."}
+          {"name": "Power-Up Punch", "type": "Fighting", "desc": "Deals damage and raises Attack."},
+          {"name": "Ice Punch", "type": "Ice", "desc": "Deals damage and may freeze."}
         ]
       }
     ]

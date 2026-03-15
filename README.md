@@ -34,3 +34,16 @@ Acesse:
 ## Observações
 
 - Os links e `fetch` usam caminhos relativos, então o site funciona tanto em domínio raiz quanto em subcaminho de projeto do GitHub Pages.
+
+## Personalizando equipes, habilidades e sprites
+
+- O arquivo `data/battles.json` define todos os treinadores, seus Pokémon, itens, habilidades e movimentos.
+- Para mudar a habilidade de um Pokémon (por exemplo, usar uma habilidade alternativa), edite o campo `ability` do Pokémon no JSON.
+- Para mudar o item segurado, edite o campo `item` do Pokémon.
+- Você também pode adicionar `abilityDescription` para customizar o tooltip que aparece ao passar o mouse sobre a habilidade.
+
+### Editando os sprites exibidos
+
+- Os sprites dos Pokémon são controlados pelo arquivo `script.js` e usam o mapeamento em `POKEMON_IDS`.
+- Se um sprite aparecer errado (por exemplo, Lycanroc aparecendo como Rockruff), verifique se o nome está correto no `POKEMON_IDS` ou se você está usando uma forma especial (por exemplo, `Lycanroc Dusk`).
+- O URL do sprite é gerado automaticamente em `getPokemonSpriteUrl()`, que também lida com formas como `Dusk`, `Midday`, `Midnight`, `Alolan`, `Galarian` e `Hisuian`.
