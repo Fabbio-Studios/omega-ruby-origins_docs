@@ -164,6 +164,7 @@ select {
   display: grid;
   gap: 0.75rem;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  align-items: start;
 }
 
 .card {
@@ -171,6 +172,9 @@ select {
   border-radius: 12px;
   background: #141417;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card summary {
@@ -302,4 +306,124 @@ select {
   nav ul {
     flex-wrap: wrap;
   }
+}
+
+.trainer-image-container {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.trainer-image {
+  max-width: 200px;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid var(--accent);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.battle-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.battle-info h2 {
+  margin: 0;
+}
+
+.battle-info p {
+  margin: 0.25rem 0 1rem;
+  color: var(--muted);
+}
+
+.battle-info {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5rem 0.8rem;
+  border-radius: 10px;
+  background: rgba(179, 18, 47, 0.9);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.pokemon-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.pokemon-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.pokemon-sprite {
+  width: 64px;
+  height: 64px;
+  image-rendering: pixelated;
+  background: var(--surface-2);
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.pokemon-card-header h3 {
+  margin: 0;
+}
+
+.subtext {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.pokemon-item {
+  color: var(--muted);
+  font-size: 0.8rem;
+  padding: 0.2rem 0.55rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.pokemon-meta {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.move-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.move-list li {
+  padding: 0.3rem 0.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.04);
+  color: #f3f4f6;
 }
