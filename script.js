@@ -270,11 +270,11 @@ const renderPokedex = (list) => {
   pokedexGrid.innerHTML = list
     .map(
       (poke) => `
-      <div class="card">
-        <img class="sprite" src="${poke.sprite}" alt="Sprite ${poke.name}" loading="lazy" />
-        <div class="poke-head">
-          <div class="dex">#${String(poke.id).padStart(3, '0')}</div>
+      <div class="poke-card">
+        <div class="poke-card-content">
+          <img src="${poke.sprite}" alt="Sprite ${poke.name}" loading="lazy" />
           <h3>${poke.name}</h3>
+          <div class="poke-number">#${String(poke.id).padStart(3, '0')}</div>
         </div>
       </div>
     `
@@ -289,9 +289,11 @@ const renderEncounterAreas = (areas) => {
   encountersList.innerHTML = areas
     .map(
       (area) => `
-      <article class="block">
-        <h3>${area.name}</h3>
-        <table class="table">
+      <div class="encounter-area">
+        <div class="encounter-header">
+          <h3>${area.name}</h3>
+        </div>
+        <table class="encounter-table">
           <thead>
             <tr><th>Pokémon</th><th>%</th><th>Method</th><th>Level</th></tr>
           </thead>
@@ -308,7 +310,7 @@ const renderEncounterAreas = (areas) => {
               .join('')}
           </tbody>
         </table>
-      </article>
+      </div>
     `
     )
     .join('');
