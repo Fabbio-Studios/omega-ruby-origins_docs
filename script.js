@@ -379,48 +379,47 @@ const POKEMON_IDS = {
   'Pecharunt': 1000
 };
 
-// Function to get the correct sprite URL for Pokemon, including Mega Evolutions and forms
-const getPokemonSpriteUrl = (pokemonName) => {
-  const baseId = POKEMON_IDS[pokemonName];
-  if (!baseId) return 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png'; // Default to Bulbasaur
+const getPokemonSpriteBasePath = () => (
+  window.location.pathname.includes('/battles/')
+    ? '../images/pokesprite-master/pokesprites'
+    : 'images/pokesprite-master/pokesprites'
+);
 
-  // Handle Mega Evolutions
-  if (pokemonName.includes('Mega ')) {
-    const baseName = pokemonName.replace('Mega ', '');
-    const megaBaseId = POKEMON_IDS[baseName];
-    if (pokemonName.includes(' X')) {
-      return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${megaBaseId}-mega-x.png`;
-    } else if (pokemonName.includes(' Y')) {
-      return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${megaBaseId}-mega-y.png`;
-    } else {
-      return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${megaBaseId}-mega.png`;
-    }
+const getPokedexSpriteIndex = (pokemonName) => {
+  const aliasEntries = Object.entries(POKEDEX_NAME_ALIASES);
+  const directIndex = ALLOWED_POKEDEX_NAMES.indexOf(pokemonName);
+  if (directIndex !== -1) return directIndex + 1;
+
+  const aliasMatch = aliasEntries.find(([, canonical]) => canonical === pokemonName);
+  if (aliasMatch) {
+    return ALLOWED_POKEDEX_NAMES.indexOf(aliasMatch[0]) + 1;
   }
 
-  // Handle other forms (this is a basic implementation - can be expanded)
-  const formMatch = pokemonName.match(/\b(Dusk|Midday|Midnight)\b/i);
-  if (formMatch) {
-    const form = formMatch[1].toLowerCase();
-    return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${baseId}-${form}.png`;
-  }
-
-  if (pokemonName.includes('Alolan')) {
-    return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${baseId}-alolan.png`;
-  }
-  if (pokemonName.includes('Galarian')) {
-    return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${baseId}-galar.png`;
-  }
-  if (pokemonName.includes('Hisuian')) {
-    return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${baseId}-hisui.png`;
-  }
-
-  return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${baseId}.png`;
+  return 0;
 };
 
-const getItemSpriteUrl = (itemName) => {
-  if (!itemName) return '';
-  // Normalize item names to match PokeAPI item sprite filenames.
-  const normalized = itemName
+const getPokemonSpriteFileName = (pokemonName) => {
+  if (pokemonName === 'Lycanroc Dusk') {
+    return 'graphics.pokemon.sprites.front_lyranroc.png';
+  }
+
+  const spriteIndex = getPokedexSpriteIndex(pokemonName);
+  if (!spriteIndex) {
+    return '';
+  }
+
+  const displayName = ALLOWED_POKEDEX_NAMES[spriteIndex - 1] || pokemonName;
+  return `graphics.pokemon.sprites.front_${spriteIndex}_${displayName}.png`;
+};
+
+const getPokemonSpriteUrl = (pokemonName) => {
+  const basePath = getPokemonSpriteBasePath();
+  const fileName = getPokemonSpriteFileName(pokemonName);
+  return fileName ? `${basePath}/${fileName}` : '';
+};
+
+const normalizeItemName = (itemName) =>
+  itemName
     .toString()
     .trim()
     .toLowerCase()
@@ -432,7 +431,65 @@ const getItemSpriteUrl = (itemName) => {
     .replace(/\u00F3/g, 'o')
     .replace(/\u00E7/g, 'c');
 
-  return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${normalized}.png`;
+const getItemSpriteUrl = (itemName) => {
+  if (!itemName) return '';
+
+  const normalized = normalizeItemName(itemName);
+  const basePath = window.location.pathname.includes('/battles/')
+    ? '../images/pokesprite-master/icons'
+    : 'images/pokesprite-master/icons';
+
+  const categoryByExactItem = {
+    'oran-berry': 'berry',
+    'sitrus-berry': 'berry',
+    'lum-berry': 'berry',
+    'aguav-berry': 'berry',
+    'figy-berry': 'berry',
+    'iapapa-berry': 'berry',
+    'mago-berry': 'berry',
+    'wiki-berry': 'berry',
+    'berry-juice': 'medicine',
+    'leftovers': 'hold-item',
+    'bright-powder': 'hold-item',
+    'heat-rock': 'hold-item',
+    'soft-sand': 'hold-item',
+    'scope-lens': 'hold-item',
+    'wide-lens': 'hold-item',
+    'life-orb': 'hold-item',
+    'spell-tag': 'hold-item',
+    'choice-band': 'hold-item',
+    'choice-specs': 'hold-item',
+    'focus-sash': 'hold-item',
+    'mystic-water': 'hold-item',
+    'nevermeltice': 'hold-item',
+    'never-melt-ice': 'hold-item',
+    'dark-glasses': 'hold-item',
+    'eviolite': 'hold-item',
+    'choice-scarf': 'hold-item',
+    'black-glasses': 'hold-item',
+    'stick': 'hold-item'
+  };
+
+  const filenameByExactItem = {
+    'oran-berry': 'oran',
+    'sitrus-berry': 'sitrus',
+    'lum-berry': 'lum',
+    'aguav-berry': 'aguav',
+    'figy-berry': 'figy',
+    'iapapa-berry': 'iapapa',
+    'mago-berry': 'mago',
+    'wiki-berry': 'wiki',
+    'nevermeltice': 'never-melt-ice',
+    'dark-glasses': 'black-glasses'
+  };
+
+  const inferredCategory = categoryByExactItem[normalized]
+    || (normalized.endsWith('-berry') ? 'berry' : 'hold-item');
+
+  const inferredFilename = filenameByExactItem[normalized]
+    || normalized.replace(/-berry$/, '');
+
+  return `${basePath}/${inferredCategory}/${inferredFilename}.png`;
 };
 
 const pokedexGrid = document.getElementById('pokedex-grid');
@@ -860,7 +917,7 @@ const ALLOWED_POKEDEX_NAMES = [
 ];
 
 const POKEDEX_NAME_ALIASES = {
-  "??????????": { id: 0, sprite: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png" },
+  "??????????": { id: 0, sprite: "images/pokesprite-master/pokesprites/graphics.pokemon.sprites.front_1_??????????.png" },
   "Sliggo": "Sliggoo",
   "Blacephlon": "Blacephalon",
   "Fletchnder": "Fletchinder",
@@ -873,7 +930,8 @@ const POKEDEX_NAME_ALIASES = {
   "Rotom H.": "Heatrotom",
   "Rotom W.": "Washrotom",
   "Rotom M.": "Mowrotom",
-  "Baraskewda": "Barraskewda"
+  "Baraskewda": "Barraskewda",
+  "Lycanroc Dusk": "Lycanroc Dusk"
 };
 
 const buildAllowedPokedexList = () =>
@@ -894,9 +952,7 @@ const buildAllowedPokedexList = () =>
     return {
       id: id || 0,
       name: displayName,
-      sprite: id
-        ? getPokemonSpriteUrl(canonicalName)
-        : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png'
+      sprite: getPokemonSpriteUrl(canonicalName)
     };
   });
 
